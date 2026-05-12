@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Kaur's Kitchen — Visit us at 7327 101 Ave NW, Edmonton, Alberta. Call 1 877-513-3195 or order online." />
+  <meta name="theme-color" content="#7353A3" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="Contact — Kaur's Kitchen" />
+  <meta property="og:description" content="Visit us in Edmonton for fresh Indian vegan and vegetarian food. Find our address, hours, and get directions." />
+
+  <title>Contact — Kaur's Kitchen</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+  <!-- =============================================
+       NAVIGATION
+       ============================================= -->
+  <header>
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+      <div class="nav__inner">
+
+        <a href="index.html" class="nav__logo" aria-label="Kaur's Kitchen home">
+          <img src="images/Kaurs Kitchen Logo.webp" alt="Kaur's Kitchen" class="nav__logo-img" />
+        </a>
+
+        <ul class="nav__links" role="list">
+          <li><a href="index.html"             class="nav__link">Home</a></li>
+          <li><a href="index.html#our-food"    class="nav__link">Our Food</a></li>
+          <li><a href="index.html#our-philosophy" class="nav__link">Our Philosophy</a></li>
+          <li><a href="contact.html"           class="nav__link" aria-current="page">Contact</a></li>
+        </ul>
+
+        <div class="nav__cta">
+          <a href="https://app.orderchop.com/69f3a3f9e282db136ff66564/store"
+             class="btn btn--primary"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Order online from Kaur's Kitchen">
+            Order Online
+          </a>
+        </div>
+
+        <button class="nav__hamburger"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+      </div>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div class="nav__mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobile navigation">
+      <a href="index.html"                class="nav__mobile-link">Home</a>
+      <a href="index.html#our-food"       class="nav__mobile-link">Our Food</a>
+      <a href="index.html#our-philosophy" class="nav__mobile-link">Our Philosophy</a>
+      <a href="contact.html"              class="nav__mobile-link">Contact</a>
+      <a href="https://app.orderchop.com/69f3a3f9e282db136ff66564/store"
+         class="btn btn--primary btn--lg nav__mobile-cta"
+         target="_blank"
+         rel="noopener noreferrer">
+        Order Online
+      </a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- =============================================
+         CONTACT HERO
+         ============================================= -->
+    <section class="contact-hero" aria-labelledby="contact-hero-heading">
+
+      <div class="contact-hero__bg" aria-hidden="true">
+        <img src="images/7.jpg" alt="" />
+      </div>
+      <div class="contact-hero__overlay" aria-hidden="true"></div>
+
+      <div class="contact-hero__content">
+        <span class="eyebrow">Find Us</span>
+        <h1 class="headline headline--lg" id="contact-hero-heading">
+          Visit Kaur's Kitchen
+        </h1>
+        <p class="body-lg">
+          We would love to welcome you for fresh Indian vegan and vegetarian
+          food in Edmonton.
+        </p>
+      </div>
+
+    </section>
+
+    <!-- =============================================
+         CONTACT CARDS
+         ============================================= -->
+    <section class="contact-cards" aria-labelledby="contact-cards-heading">
+      <div class="container">
+
+        <h2 class="visually-hidden" id="contact-cards-heading">Contact Information</h2>
+
+        <div class="contact-cards__grid">
+
+          <!-- Address -->
+          <div class="contact-card fade-up fade-up-delay-1">
+            <div class="contact-card__icon" aria-hidden="true">📍</div>
+            <h3 class="contact-card__title">Our Location</h3>
+            <address class="contact-card__content" style="font-style:normal;">
+              <p>7327 101 Ave NW</p>
+              <p>Edmonton, Alberta</p>
+              <p>Canada T6A 0H9</p>
+              <br>
+              <a href="https://maps.google.com/?q=7327+101+Ave+NW,+Edmonton,+AB+T6A+0H9"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 aria-label="Get directions to Kaur's Kitchen on Google Maps">
+                Get Directions →
+              </a>
+            </address>
+          </div>
+
+          <!-- Phone -->
+          <div class="contact-card fade-up fade-up-delay-2">
+            <div class="contact-card__icon" aria-hidden="true">📞</div>
+            <h3 class="contact-card__title">Call Us</h3>
+            <div class="contact-card__content">
+              <p>
+                <a href="tel:18775133195" aria-label="Call Kaur's Kitchen at 1 877-513-3195">
+                  1 877-513-3195
+                </a>
+              </p>
+              <br>
+              <p>Have a question about our menu, dietary options, or catering? Give us a call.</p>
+            </div>
+          </div>
+
+          <!-- Hours -->
+          <div class="contact-card fade-up fade-up-delay-3">
+            <div class="contact-card__icon" aria-hidden="true">🕐</div>
+            <h3 class="contact-card__title">Opening Hours</h3>
+            <div class="contact-card__content" aria-label="Restaurant opening hours">
+              <p><strong>Monday – Friday</strong></p>
+              <p>10:00 AM – 8:30 PM</p>
+              <p style="margin-top:10px;"><strong>Saturday &amp; Sunday</strong></p>
+              <p>11:00 AM – 8:30 PM</p>
+              <span class="closed-note">✦ Closed the last Tuesday of every month</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         DYNAMIC STATUS
+         ============================================= -->
+    <section class="contact-status" aria-label="Current restaurant status" aria-live="polite">
+      <div class="container">
+        <div class="contact-status__inner fade-up">
+
+          <div class="contact-status__text">
+            <span class="eyebrow">Right Now</span>
+            <p class="contact-status__label is-closed" data-status-heading aria-live="polite">
+              Checking…
+            </p>
+            <p class="contact-status__meta" data-status-detail></p>
+          </div>
+
+          <div class="contact-status__badge-wrap">
+            <div class="status-badge status-badge--card"
+                 data-status-badge
+                 style="font-size:0.9375rem; padding:12px 22px;"
+                 aria-live="polite">
+              <span class="status-dot" data-status-dot aria-hidden="true"></span>
+              <span data-status-label>Checking hours…</span>
+            </div>
+            <p style="margin-top: 12px; font-size:0.825rem; color:var(--gray-500); text-align:center;">
+              Based on your local time
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         MAP
+         ============================================= -->
+    <section class="contact-map" aria-label="Map showing Kaur's Kitchen location">
+      <iframe
+        title="Kaur's Kitchen location map"
+        loading="lazy"
+        allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=7327+101+Ave+NW,+Edmonton,+AB+T6A+0H9,+Canada&output=embed">
+      </iframe>
+    </section>
+
+    <!-- =============================================
+         ORDER CTA
+         ============================================= -->
+    <section class="section order-cta" aria-labelledby="contact-order-heading">
+      <div class="order-cta__bg-accent" aria-hidden="true"></div>
+      <div class="container">
+        <div class="order-cta__content fade-up">
+          <span class="order-cta__eyebrow">Skip the Queue</span>
+          <h2 class="headline" id="contact-order-heading">
+            Order Direct From<br>Kaur's Kitchen
+          </h2>
+          <p class="body-lg">
+            Skip the third-party apps and order directly from the restaurant —
+            fresher food, faster service, and your support goes straight to us.
+          </p>
+          <a href="https://app.orderchop.com/69f3a3f9e282db136ff66564/store"
+             class="btn btn--white btn--lg"
+             target="_blank"
+             rel="noopener noreferrer">
+            Order Online
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =============================================
+       FOOTER
+       ============================================= -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+
+        <div class="footer__brand">
+          <div class="footer__logo-wrap">
+            <a href="index.html" aria-label="Kaur's Kitchen home">
+              <img src="images/Kaurs Kitchen Logo.webp" alt="Kaur's Kitchen" class="footer__logo-img" />
+            </a>
+          </div>
+          <p class="footer__tagline">
+            Authentic Indian vegan and vegetarian food, made with love and
+            tradition in Edmonton, Alberta.
+          </p>
+          <a href="https://app.orderchop.com/69f3a3f9e282db136ff66564/store"
+             class="btn btn--secondary"
+             target="_blank"
+             rel="noopener noreferrer">
+            Order Online
+          </a>
+        </div>
+
+        <div>
+          <p class="footer__col-title">Navigate</p>
+          <ul class="footer__links" role="list">
+            <li><a href="index.html"                class="footer__link">Home</a></li>
+            <li><a href="index.html#our-food"       class="footer__link">Our Food</a></li>
+            <li><a href="index.html#our-philosophy" class="footer__link">Our Philosophy</a></li>
+            <li><a href="contact.html"              class="footer__link">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer__col-title">Hours</p>
+          <div class="footer__hours-list" aria-label="Opening hours">
+            <p><strong style="color:rgba(255,255,255,0.75)">Mon – Fri</strong></p>
+            <p>10:00 AM – 8:30 PM</p>
+            <p style="margin-top:10px;"><strong style="color:rgba(255,255,255,0.75)">Sat &amp; Sun</strong></p>
+            <p>11:00 AM – 8:30 PM</p>
+            <p class="footer__hours-closed">✦ Closed last Tuesday of every month</p>
+          </div>
+        </div>
+
+        <div>
+          <p class="footer__col-title">Contact</p>
+          <address class="footer__address" style="font-style:normal;">
+            <p>7327 101 Ave NW</p>
+            <p>Edmonton, Alberta</p>
+            <p>Canada T6A 0H9</p>
+            <br>
+            <p><a href="tel:18775133195">1 877-513-3195</a></p>
+          </address>
+          <a href="https://maps.google.com/?q=7327+101+Ave+NW,+Edmonton,+AB+T6A+0H9"
+             class="btn btn--secondary"
+             target="_blank"
+             rel="noopener noreferrer"
+             style="font-size:0.875rem; padding:10px 20px;">
+            Get Directions
+          </a>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">
+          &copy; <span id="footer-year"></span> Kaur's Kitchen. All rights reserved.
+        </p>
+        <p class="footer__powered">
+          Powered by <a href="https://orderchop.com/index.html" target="_blank" rel="noopener noreferrer">OrderChop</a>
+        </p>
+        <nav class="footer__legal" aria-label="Legal links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kaur's Kitchen — Authentic Indian vegan and vegetarian food in Edmonton, Alberta. Fresh, nourishing plant-based dishes made with traditional methods and bold spices." />
+  <meta name="theme-color" content="#7353A3" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="Kaur's Kitchen — Indian Vegan & Vegetarian, Edmonton" />
+  <meta property="og:description" content="Fresh, nourishing Indian dishes made with traditional methods, vibrant spices, and a deep respect for plant-based cooking." />
+  <meta property="og:image"       content="images/og-image.jpg" />
+
+  <title>Kaur's Kitchen — Indian Vegan &amp; Vegetarian Food, Edmonton</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Preconnect for fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+  <!-- =============================================
+       NAVIGATION
+       ============================================= -->
+  <header>
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+      <div class="nav__inner">
+
+        <!-- Logo -->
+        <a href="index.html" class="nav__logo" aria-label="Kaur's Kitchen home">
+          <img src="images/Kaurs Kitchen Logo.webp" alt="Kaur's Kitchen" class="nav__logo-img" />
+        </a>
+
+        <!-- Desktop links -->
+        <ul class="nav__links" role="list">
+          <li><a href="index.html"      class="nav__link" aria-current="page">Home</a></li>
+          <li><a href="#our-food"       class="nav__link">Our Food</a></li>
+          <li><a href="#our-philosophy" class="nav__link">Our Philosophy</a></li>
+          <li><a href="contact.html"    class="nav__link">Contact</a></li>
+        </ul>
+
+        <!-- Desktop CTA -->
+        <div class="nav__cta">
+          <a href="https://app.orderchop.com/69f3a3f9e282db136ff66564/store"
+             class="btn btn--primary"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Order online from Kaur's Kitchen">
+            Order Online
+          </a>
+        </div>
+
+        <!-- Mobile hamburger -->
+        <button class="nav__hamburger"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+      </div>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div class="nav__mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobile navigation">
+      <a href="index.html"      class="nav__mobile-link">Home</a>
+      <a href="#our-food"       class="nav__mobile-link">Our Food</a>
+      <a href="#our-philosophy" class="nav__mobile-link">Our Philosophy</a>
+      <a href="contact.html"    class="nav__mobile-link">Contact</a>
+      <a href="https://app.orderchop.com/69f3a3f9e282db136ff66564/store"
+         class="btn btn--primary btn--lg nav__mobile-cta"
+         target="_blank"
+         rel="noopener noreferrer">
+        Order Online
+      </a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- =============================================
+         HERO
+         ============================================= -->
+    <section class="hero" aria-labelledby="hero-heading">
+
+      <!-- Background image -->
+      <!-- REPLACE: swap this src with your best hero food photo -->
+      <div class="hero__bg" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=1920&q=85"
+             alt="" />
+      </div>
+      <div class="hero__overlay" aria-hidden="true"></div>
+
+      <div class="hero__content">
+        <div class="hero__inner">
+
+          <span class="hero__eyebrow">Edmonton, Alberta · Indian Vegan &amp; Vegetarian</span>
+
+          <h1 class="hero__title" id="hero-heading">
+            Authentic Indian<br>
+            <em>Vegan &amp; Vegetarian</em><br>
+            Food in Edmonton
+          </h1>
+
+          <p class="hero__subtitle">
+            Fresh, nourishing Indian dishes made with traditional methods,
+            vibrant spices, and a deep respect for plant-based cooking.
+          </p>
+
+          <div class="hero__actions">
+            <a href="https://app.orderchop.com/69f3a3f9e282db136ff66564/store"
+               class="btn btn--primary btn--lg"
+               target="_blank"
+               rel="noopener noreferrer">
+              Order Online
+            </a>
+            <a href="tel:18775133195"
+               class="btn btn--ghost-white btn--lg">
+              Call Now
+            </a>
+          </div>
+
+          <!-- Dynamic status badge -->
+          <div class="hero__status">
+            <div class="status-badge status-badge--light" data-status-badge aria-live="polite">
+              <span class="status-dot" data-status-dot aria-hidden="true"></span>
+              <span data-status-label>Checking hours…</span>
+            </div>
+            <span class="status-hours" data-status-detail aria-live="polite"></span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         TRUST BAR
+         ============================================= -->
+    <section class="trust-bar" aria-label="Restaurant highlights">
+      <div class="trust-bar__inner">
+        <div class="trust-item">
+          <span class="trust-item__icon" aria-hidden="true">🌿</span>
+          <span class="trust-item__text">100% Vegan &amp; Vegetarian</span>
+        </div>
+        <div class="trust-item">
+          <span class="trust-item__icon" aria-hidden="true">🧑‍🍳</span>
+          <span class="trust-item__text">Authentic Indian Recipes</span>
+        </div>
+        <div class="trust-item">
+          <span class="trust-item__icon" aria-hidden="true">✨</span>
+          <span class="trust-item__text">Traditional Spices &amp; Methods</span>
+        </div>
+        <div class="trust-item">
+          <span class="trust-item__icon" aria-hidden="true">📦</span>
+          <span class="trust-item__text">Order Direct Online</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         FEATURED DISHES
+         ============================================= -->
+    <section class="section dishes" id="our-food" aria-labelledby="dishes-heading">
+      <div class="container">
+
+        <header class="section-header--center fade-up">
+          <span class="eyebrow">Our Menu</span>
+          <h2 class="headline" id="dishes-heading">
+            Comforting Indian Classics,<br>Made Plant-Based
+          </h2>
+          <p class="body-lg">
+            From rich curries and warm breads to colourful rice dishes and
+            homestyle favourites, every dish is prepared with care, flavour, and balance.
+          </p>
+        </header>
+
+        <div class="dishes__grid">
+
+          <!-- Card 1 — Chana Masala -->
+          <article class="dish-card fade-up fade-up-delay-1">
+            <div class="dish-card__image">
+              <img src="images/1.jpg"
+                   alt="Chana Masala — golden chickpea curry served over basmati rice in a ceramic bowl" />
+            </div>
+            <div class="dish-card__body">
+              <p class="dish-card__tag">Fan Favourite</p>
+              <h3 class="dish-card__name">Chana Masala</h3>
+              <p class="dish-card__desc">Bold chickpea curry cooked with onion, tomato, ginger, and a house-blend of warming spices.</p>
+            </div>
+          </article>
+
+          <!-- Card 2 — Dal Tadka -->
+          <article class="dish-card fade-up fade-up-delay-2">
+            <div class="dish-card__image">
+              <img src="images/2.jpg"
+                   alt="Dal Tadka — creamy spiced lentils served alongside fluffy rice and fresh green chutney" />
+            </div>
+            <div class="dish-card__body">
+              <p class="dish-card__tag">Signature</p>
+              <h3 class="dish-card__name">Dal Tadka</h3>
+              <p class="dish-card__desc">Slow-cooked lentils finished with a sizzling temper of cumin, garlic, and dried chilli.</p>
+            </div>
+          </article>
+
+          <!-- Card 3 — Herb Pilaf -->
+          <article class="dish-card fade-up fade-up-delay-3">
+            <div class="dish-card__image">
+              <img src="images/3.jpg"
+                   alt="Herb Pilaf — vibrant green herb and grain dish with fresh peas and a wedge of lemon" />
+            </div>
+            <div class="dish-card__body">
+              <p class="dish-card__tag">Fresh &amp; Light</p>
+              <h3 class="dish-card__name">Herb Pilaf</h3>
+              <p class="dish-card__desc">Fragrant basmati tossed with garden herbs, peas, and a bright squeeze of lemon.</p>
+            </div>
+          </article>
+
+          <!-- Card 4 — Masala Khichdi -->
+          <article class="dish-card fade-up fade-up-delay-4">
+            <div class="dish-card__image">
+              <img src="images/6.jpg"
+                   alt="Masala Khichdi — comforting spiced rice and vegetable dish topped with cooling yogurt" />
+            </div>
+            <div class="dish-card__body">
+              <p class="dish-card__tag">Comfort Food</p>
+              <h3 class="dish-card__name">Masala Khichdi</h3>
+              <p class="dish-card__desc">Homestyle spiced rice and lentils cooked together and served with cool, fresh yogurt.</p>
+            </div>
+          </article>
+
+        </div>
+
+        <div style="text-align:center; margin-top:52px;">
+          <a href="https://app.orderchop.com/69f3a3f9e282db136ff66564/store"
+             class="btn btn--secondary btn--lg fade-up"
+             target="_blank"
+             rel="noopener noreferrer">
+            View Full Menu &amp; Order
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =============================================
+         PHILOSOPHY
+         ============================================= -->
+    <section class="section philosophy" id="our-philosophy" aria-labelledby="philosophy-heading">
+      <div class="container">
+        <div class="philosophy__inner fade-up">
+
+          <div class="philosophy__image">
+            <img src="images/philosophy.png"
+                 alt="A rich yellow vegetable curry in a dark bowl — vibrant, warming, and full of life" />
+          </div>
+
+          <div class="philosophy__content">
+            <span class="eyebrow">Who We Are</span>
+            <h2 class="headline" id="philosophy-heading">Our Philosophy</h2>
+            <p class="body-lg">
+              Kaur's Kitchen is more than a restaurant. It is a celebration
+              of Indian culture, family cooking, and nourishing plant-based food.
+              We use authentic ingredients, traditional techniques, and bold spices
+              to create meals that feel comforting, generous, and full of life.
+            </p>
+            <span class="philosophy__accent" aria-hidden="true"></span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         CHEF SECTION
+         ============================================= -->
+    <section class="section chef" id="chef" aria-labelledby="chef-heading">
+      <div class="container">
+        <div class="chef__inner">
+
+          <!-- Image side -->
+          <div class="chef__image-wrap fade-up">
+            <div class="chef__image">
+              <img src="images/chef-jatinder.jpeg"
+                   alt="Chef Jatinder, head chef and founder of Kaur's Kitchen, smiling in her kitchen" />
+            </div>
+            <div class="chef__badge" aria-hidden="true">
+              <p class="chef__badge-title">Chef Jatinder</p>
+              <p class="chef__badge-sub">Head Chef &amp; Founder</p>
+            </div>
+          </div>
+
+          <!-- Content side -->
+          <div class="chef__content fade-up fade-up-delay-2">
+            <span class="eyebrow">The Heart of the Kitchen</span>
+            <h2 class="headline" id="chef-heading">Meet Chef Jatinder</h2>
+            <p class="body-lg">
+              Head chef Jatinder brings heart, heritage, and creativity into every
+              dish. Her menu is designed to do more than satisfy hunger. It tells a
+              story of tradition, passion, and the joy of sharing beautiful Indian
+              food with the community.
+            </p>
+            <blockquote class="chef__quote">
+              <p>"Every dish I make carries the memory of home — the smells, the warmth, the love that went into cooking for family."</p>
+            </blockquote>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         HOURS BAR
+         ============================================= -->
+    <section class="hours-bar section--sm" aria-label="Restaurant hours">
+      <div class="container">
+        <div class="hours-bar__inner">
+
+          <div class="hours-bar__left">
+            <p class="subheadline">Our Hours</p>
+            <div class="hours-bar__table" aria-label="Opening hours">
+              <p><strong>Monday – Friday</strong> &nbsp;10:00 AM – 8:30 PM</p>
+              <p><strong>Saturday &amp; Sunday</strong> &nbsp;11:00 AM – 8:30 PM</p>
+              <p class="closed-note">✦ Closed the last Tuesday of every month</p>
+            </div>
+          </div>
+
+          <div class="hours-bar__status">
+            <div class="status-badge status-badge--card" data-status-badge aria-live="polite">
+              <span class="status-dot" data-status-dot aria-hidden="true"></span>
+              <span data-status-label>Checking…</span>
+            </div>
+            <p class="status-hours" data-status-detail style="margin-top:10px;"></p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         ORDER CTA
+         ============================================= -->
+    <section class="section order-cta" aria-labelledby="order-heading">
+      <div class="order-cta__bg-accent" aria-hidden="true"></div>
+      <div class="container">
+        <div class="order-cta__content fade-up">
+          <span class="order-cta__eyebrow">Ready to Eat?</span>
+          <h2 class="headline" id="order-heading">
+            Hungry for Real<br>Indian Flavour?
+          </h2>
+          <p class="body-lg">
+            Order directly from Kaur's Kitchen and enjoy fresh vegetarian
+            and vegan Indian food made with care — no middlemen, just great food.
+          </p>
+          <a href="https://app.orderchop.com/69f3a3f9e282db136ff66564/store"
+             class="btn btn--white btn--lg"
+             target="_blank"
+             rel="noopener noreferrer">
+            Order Online
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =============================================
+       FOOTER
+       ============================================= -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+
+        <!-- Brand -->
+        <div class="footer__brand">
+          <div class="footer__logo-wrap">
+            <a href="index.html" aria-label="Kaur's Kitchen home">
+              <img src="images/Kaurs Kitchen Logo.webp" alt="Kaur's Kitchen" class="footer__logo-img" />
+            </a>
+          </div>
+          <p class="footer__tagline">
+            Authentic Indian vegan and vegetarian food, made with love and
+            tradition in Edmonton, Alberta.
+          </p>
+          <a href="https://app.orderchop.com/69f3a3f9e282db136ff66564/store"
+             class="btn btn--secondary"
+             target="_blank"
+             rel="noopener noreferrer">
+            Order Online
+          </a>
+        </div>
+
+        <!-- Links -->
+        <div>
+          <p class="footer__col-title">Navigate</p>
+          <ul class="footer__links" role="list">
+            <li><a href="index.html"      class="footer__link">Home</a></li>
+            <li><a href="#our-food"       class="footer__link">Our Food</a></li>
+            <li><a href="#our-philosophy" class="footer__link">Our Philosophy</a></li>
+            <li><a href="contact.html"    class="footer__link">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Hours -->
+        <div>
+          <p class="footer__col-title">Hours</p>
+          <div class="footer__hours-list" aria-label="Opening hours">
+            <p><strong style="color:rgba(255,255,255,0.75)">Mon – Fri</strong></p>
+            <p>10:00 AM – 8:30 PM</p>
+            <p style="margin-top:10px;"><strong style="color:rgba(255,255,255,0.75)">Sat &amp; Sun</strong></p>
+            <p>11:00 AM – 8:30 PM</p>
+            <p class="footer__hours-closed">✦ Closed last Tuesday of every month</p>
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <p class="footer__col-title">Contact</p>
+          <address class="footer__address" style="font-style:normal;">
+            <p>7327 101 Ave NW</p>
+            <p>Edmonton, Alberta</p>
+            <p>Canada T6A 0H9</p>
+            <br>
+            <p>
+              <a href="tel:18775133195">1 877-513-3195</a>
+            </p>
+          </address>
+          <a href="contact.html" class="btn btn--secondary" style="font-size:0.875rem; padding:10px 20px;">
+            Get Directions
+          </a>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">
+          &copy; <span id="footer-year"></span> Kaur's Kitchen. All rights reserved.
+        </p>
+        <p class="footer__powered">
+          Powered by <a href="https://orderchop.com/index.html" target="_blank" rel="noopener noreferrer">OrderChop</a>
+        </p>
+        <nav class="footer__legal" aria-label="Legal links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Set current year in footer
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
